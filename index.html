@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>制药物料管理法规知识库</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">💊 制药物料管理法规知识库</h1>
+            <p class="subtitle"> Pharmaceutical Material Management Regulatory Knowledge Base</p>
+        </div>
+    </header>
+
+    <main class="main container">
+        <!-- 统计信息 -->
+        <section class="stats">
+            <div class="stat-card">
+                <span class="stat-number">24</span>
+                <span class="stat-label">法规总数</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">141</span>
+                <span class="stat-label">关键条款总数</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">20</span>
+                <span class="stat-label">有详情页</span>
+            </div>
+        </section>
+
+        <!-- 搜索和筛选 -->
+        <section class="filters">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="🔍 搜索法规名称或关键词...">
+            </div>
+            <div class="filter-tags">
+                <span class="filter-label">物料类型：</span>
+                <button class="filter-tag active" data-filter="all" data-type="material">全部</button>
+                <button class="filter-tag" data-filter="原料" data-type="material">原料</button>
+                <button class="filter-tag" data-filter="辅料" data-type="material">辅料</button>
+                <button class="filter-tag" data-filter="包材" data-type="material">包材</button>
+                <button class="filter-tag" data-filter="耗材" data-type="material">耗材</button>
+            </div>
+            <div class="filter-tags">
+                <span class="filter-label">管理类型：</span>
+                <button class="filter-tag active" data-filter="all" data-type="management">全部</button>
+                <button class="filter-tag" data-filter="物料管理" data-type="management">物料管理</button>
+                <button class="filter-tag" data-filter="供应商管理" data-type="management">供应商管理</button>
+            </div>
+        </section>
+
+        <!-- 法规列表 -->
+        <section class="regulation-list">
+            <table class="regulation-table">
+                <thead>
+                    <tr>
+                        <th class="col-id">编号</th>
+                        <th class="col-name">法规名称</th>
+                        <th class="col-org">发布机构</th>
+                        <th class="col-date">发布时间</th>
+                        <th class="col-clauses">条款数</th>
+                        <th class="col-link">链接</th>
+                        <th class="col-status">状态</th>
+                    </tr>
+                </thead>
+                <tbody id="regulationTableBody">
+                    
+        <tr data-id="10001">
+            <td class="col-id">10001</td>
+            <td class="col-name"><a href="pages/10001.html" class="regulation-link">GMP 附录：药包材</a></td>
+            <td class="col-org">—</td>
+            <td class="col-date">—</td>
+            <td class="col-clauses">21</td>
+            <td class="col-link"><a href="https://www.nmpa.gov.cn/xxgk/fgwj/xzhgfxwj/20250102142249169.html" target="_blank" class="external-link">查看原文</a></td>
+            <td class="col-status"><span class="status status-success">完整</span></td>
+        </tr>
+        <tr data-id="10002">
+            <td class="col-id">10002</td>
+            <td class="col-name"><a href="pages/10002.html" class="regulation-link">中华人民共和国药品管理法实施条例</a></td>
+            <td class="col-org">国务院</td>
+            <td class="col-date">2025年12月31日</td>
+            <td class="col-clauses">10</td>
+            <td class="col-link"><a href="https://www.nmpa.gov.cn/xxgk/fgwj/flxzhfg/20260127172639127.html" target="_blank" class="external-link">查看原文</a></td>
+            <td class="col-status"><span class="status status-success">完整</span></td>
+        </tr>
+        <tr data-id="10003">
+            <td class="col-id">10003</td>
+            <td class="col-name"><a href="pages/10003.html" class="regulation-link">GMP 附录：药用辅料</a></td>
+            <td class="col-org">—</td>
+            <td class="col-date">—</td>
+            <td class="col-clauses">25</td>
+            <td class="col-link"><a href="https://www.nmpa.gov.cn/xxgk/fgwj/xzhgfxwj/20250102142249169.html" target="_blank" class="external-link">查看原文</a></td>
+            <td class="col-status"><span class="status status-success">完整</span></td>
+        </tr>
+        <tr data-id="10004">
+            <td class="col-id">10004</td>
+            <td class="col-name"><a href="pages/10004.html" class="regulation-link">ChP9601 药用辅料功能性相关指标指导原则</a></td>
+            <td class="col-org">—</td>
+            <td class="col-date">—</td>
+            <td class="col-clauses">1</td>
+            <td class="col-link">—</td>
+            <td class="col-status"><span class="status status-warning">无链接</span></td>
+        </tr>
+        <tr data-id="10005">
+            <td class="col-id">10005</td>
+            <td class="col-name"><a href="pages/10005.html" class="regulation-link">ChP9602 动物来源药用辅料指导原则</a></td>
+            <td class="col-org">—</td>
+            <td class="col-date">—</td>
+            <td class="col-clauses">1</td>
+            <td class="col-link">—</td>
+            <td class="col-status"><span class="status status-warning">无链接</span></td>
+        </tr>
+        <tr data-id="10006">
+            <td class="col-id">10006</td>
+            <td class="col-name"><a href="pages/10006.html" class="regulation-link">ChP9621 药包材通用要求指导原则</a></td>
+            <td class="col-org">—</td>
+            <td class="col-date">—</td>
+            <td class="col-clauses">1</td>
+            <td class="col-link">—</td>
+            <td class="col-status"><span class="status status-warning">无链接</span></td>
+        </tr>
+        <tr data-id="10007">
+            <td class="col-id">10007</td>
+            <td class="col-name"><a href="pages/10007.html" class="regulation-link">GMP 附录 1：无菌药品</a></td>
+            <td class="col-org">—</td>
+            <td class="col-date">—</td>
+            <td class="col-clauses">9</td>
+            <td class="col-link"><a href="https://www.nmpa.gov.cn/xxgk/ggtg/ypggtg/ypqtggtg/20110224164501312.html" target="_blank" class="external-link">查看原文</a></td>
+            <td class="col-status"><span class="status status-success">完整</span></td>
+        </tr>
+        <tr data-id="10008">
+            <td class="col-id">10008</td>
+            <td class="col-name"><a href="pages/10008.html" class="regulation-link">GMP 附录 2：原料药</a></td>
+            <td class="col-org">—</td>
+            <td class="col-date">—</td>
+            <td class="col-clauses">20</td>
+            <td class="col-link"><a href="https://www.nmpa.gov.cn/xxgk/ggtg/ypggtg/ypqtggtg/20110224164501312.html" target="_blank" class="external-link">查看原文</a></td>
+            <td class="col-status"><span class="status status-success">完整</span></td>
+        </tr>
+        <tr data-id="10009">
+            <td class="col-id">10009</td>
+            <td class="col-name"><a href="pages/10009.html" class="regulation-link">GMP 附录 3：生物制品</a></td>
+            <td class="col-org">—</td>
+            <td class="col-date">2020年4月23日</td>
+            <td class="col-clauses">2</td>
+            <td class="col-link"><a href="https://www.nmpa.gov.cn/yaopin/ypggtg/20200426172601351.html" target="_blank" class="external-link">查看原文</a></td>
+            <td class="col-status"><span class="status status-success">完整</span></td>
+        </tr>
+        <tr data-id="10010">
+            <td class="col-id">10010</td>
+            <td class="col-name"><span class="regulation-name">国家药监局关于加强药品上市许可持有人委托生产监督管理工作的公告（2023 年第 132 号）</span></td>
+            <td class="col-org">—</td>
+            <td class="col-date">—</td>
+            <td class="col-clauses">0</td>
+            <td class="col-link"><a href="https://www.nmpa.gov.cn/xxgk/ggtg/ypggtg/ypqtggtg/20231023160426145.html" target="_blank" class="external-link">查看原文</a></td>
+            <td class="col-status"><span class="status status-info">文件加密</span></td>
+        </tr>
+        <tr data-id="10011">
+            <td class="col-id">10011</td>
+            <td class="col-name"><a href="pages/10011.html" class="regulation-link">ChP0251 药用辅料</a></td>
+            <td class="col-org">—</td>
+            <td class="col-date">—</td>
+            <td class="col-clauses">1</td>
+            <td class="col-link">—</td>
+            <td class="col-status"><span class="status status-warning">无链接</span></td>
+        </tr>
+        <tr data-id="10012">
+            <td class="col-id">10012</td>
+            <td class="col-name"><a href="pages/10012.html" class="regulation-link">ChP0232 生物制品生产用原材料及辅料质量控制</a></td>
+            <td class="col-org">—</td>
+            <td class="col-date">—</td>
+            <td class="col-clauses">1</td>
+            <td class="col-link">—</td>
+            <td class="col-status"><span class="status status-warning">无链接</span></td>
+        </tr>
+        <tr data-id="10013">
+            <td class="col-id">10013</td>
+            <td class="col-name"><a href="pages/10013.html" class="regulation-link">GMP 附录 4：血液制品</a></td>
+            <td class="col-org">国务院</td>
+            <td class="col-date">2024年6月4日</td>
+            <td class="col-clauses">2</td>
+            <td class="col-link"><a href="https://www.nmpa.gov.cn/xxgk/fgwj/xzhgfxwj/20240611171530189.html" target="_blank" class="external-link">查看原文</a></td>
+            <td class="col-status"><span class="status status-success">完整</span></td>
+        </tr>
+        <tr data-id="10014">
+            <td class="col-id">10014</td>
+            <td class="col-name"><span class="regulation-name">国家药监局关于加强药品受托生产监督管理工作的公告（2025 年第 134 号）</span></td>
+            <td class="col-org">—</td>
+            <td class="col-date">—</td>
+            <td class="col-clauses">0</td>
+            <td class="col-link"><a href="https://www.nmpa.gov.cn/xxgk/fgwj/xzhgfxwj/20260106115318178.html" target="_blank" class="external-link">查看原文</a></td>
+            <td class="col-status"><span class="status status-info">文件加密</span></td>
+        </tr>
+        <tr data-id="10015">
+            <td class="col-id">10015</td>
+            <td class="col-name"><span class="regulation-name">国家药监局综合司关于做好生物制品分段生产有关工作的通知</span></td>
+            <td class="col-org">—</td>
+            <td class="col-date">—</td>
+            <td class="col-clauses">0</td>
+            <td class="col-link"><a href="https://www.nmpa.gov.cn/xxgk/fgwj/gzwj/gzwjyp/20260402100454129.html" target="_blank" class="external-link">查看原文</a></td>
+            <td class="col-status"><span class="status status-info">文件加密</span></td>
+        </tr>
+        <tr data-id="10016">
+            <td class="col-id">10016</td>
+            <td class="col-name"><a href="pages/10016.html" class="regulation-link">化学药品注射剂包装系统密封性研究技术指南（试行）</a></td>
+            <td class="col-org">国家药品监督管理局</td>
+            <td class="col-date">—</td>
+            <td class="col-clauses">1</td>
+            <td class="col-link"><a href="https://www.nmpa.gov.cn/xxgk/ggtg/ypggtg/ypqtggtg/20201023152807106.html" target="_blank" class="external-link">查看原文</a></td>
+            <td class="col-status"><span class="status status-success">完整</span></td>
+        </tr>
+        <tr data-id="10017">
+            <td class="col-id">10017</td>
+            <td class="col-name"><a href="pages/10017.html" class="regulation-link">化学药品注射剂生产所用的塑料组件系统相容性研究技术指南（试行）</a></td>
+            <td class="col-org">国家药品监督管理局</td>
+            <td class="col-date">—</td>
+            <td class="col-clauses">1</td>
+            <td class="col-link"><a href="https://www.nmpa.gov.cn/xxgk/ggtg/ypggtg/ypqtggtg/20201023152807106.html" target="_blank" class="external-link">查看原文</a></td>
+            <td class="col-status"><span class="status status-success">完整</span></td>
+        </tr>
+        <tr data-id="10018">
+            <td class="col-id">10018</td>
+            <td class="col-name"><a href="pages/10018.html" class="regulation-link">生物制品注册受理审查指南（试行）</a></td>
+            <td class="col-org">国家药品监督管理局</td>
+            <td class="col-date">—</td>
+            <td class="col-clauses">1</td>
+            <td class="col-link"><a href="https://www.cde.org.cn/main/news/viewInfoCommon/4ad85c95f2158d8eab911b263a92b3e2" target="_blank" class="external-link">查看原文</a></td>
+            <td class="col-status"><span class="status status-success">完整</span></td>
+        </tr>
+        <tr data-id="10019">
+            <td class="col-id">10019</td>
+            <td class="col-name"><span class="regulation-name">药品上市许可持有人委托生产现场检查指南</span></td>
+            <td class="col-org">—</td>
+            <td class="col-date">—</td>
+            <td class="col-clauses">0</td>
+            <td class="col-link"><a href="https://www.nmpa.gov.cn/xxgk/fgwj/gzwj/gzwjyp/20231024161543188.html" target="_blank" class="external-link">查看原文</a></td>
+            <td class="col-status"><span class="status status-info">文件加密</span></td>
+        </tr>
+        <tr data-id="10020">
+            <td class="col-id">10020</td>
+            <td class="col-name"><a href="pages/10020.html" class="regulation-link">药品生产监督管理办法</a></td>
+            <td class="col-org">国家药品监督管理局</td>
+            <td class="col-date">—</td>
+            <td class="col-clauses">6</td>
+            <td class="col-link"><a href="https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/fgs/art/2023/art_65070d0ee03a4109ac831ee7b3cee51c.html" target="_blank" class="external-link">查看原文</a></td>
+            <td class="col-status"><span class="status status-success">完整</span></td>
+        </tr>
+        <tr data-id="10021">
+            <td class="col-id">10021</td>
+            <td class="col-name"><a href="pages/10021.html" class="regulation-link">药品生产质量管理规范（GMP）</a></td>
+            <td class="col-org">国家市场监督管理总局</td>
+            <td class="col-date">—</td>
+            <td class="col-clauses">28</td>
+            <td class="col-link"><a href="https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_d5e1dbaa8f284277a5f6c3e2fc840d00.html" target="_blank" class="external-link">查看原文</a></td>
+            <td class="col-status"><span class="status status-success">完整</span></td>
+        </tr>
+        <tr data-id="10022">
+            <td class="col-id">10022</td>
+            <td class="col-name"><a href="pages/10022.html" class="regulation-link">药品注册管理办法</a></td>
+            <td class="col-org">国家药品监督管理局</td>
+            <td class="col-date">—</td>
+            <td class="col-clauses">8</td>
+            <td class="col-link"><a href="https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/fgs/art/2023/art_3275cb2a929d4c34ac8c0421b2a9c257.html" target="_blank" class="external-link">查看原文</a></td>
+            <td class="col-status"><span class="status status-success">完整</span></td>
+        </tr>
+        <tr data-id="10023">
+            <td class="col-id">10023</td>
+            <td class="col-name"><a href="pages/10023.html" class="regulation-link">药用辅料附录检查指导原则</a></td>
+            <td class="col-org">国家药监局</td>
+            <td class="col-date">—</td>
+            <td class="col-clauses">1</td>
+            <td class="col-link">—</td>
+            <td class="col-status"><span class="status status-warning">无链接</span></td>
+        </tr>
+        <tr data-id="10024">
+            <td class="col-id">10024</td>
+            <td class="col-name"><a href="pages/10024.html" class="regulation-link">药包材附录检查指导原则</a></td>
+            <td class="col-org">国家药监局</td>
+            <td class="col-date">—</td>
+            <td class="col-clauses">1</td>
+            <td class="col-link">—</td>
+            <td class="col-status"><span class="status status-warning">无链接</span></td>
+        </tr>
+                </tbody>
+            </table>
+            <div id="noResults" class="no-results" style="display:none;">
+                <p>没有找到匹配的法规</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>制药物料管理法规知识库 © 2024 | 数据来源：NMPA官网</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
