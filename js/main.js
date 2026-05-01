@@ -92,30 +92,9 @@ function filterTable() {
                 materialMatch = false;
             }
         }
-        
-        // 管理类型筛选
-        let managementMatch = true;
-        if (currentManagementFilter !== 'all') {
-            if (hasDetail) {
-                // 检查详情页是否有对应类别的条款
-                // 这里通过ID判断（部分ID关联特定类型）
-                const idNum = parseInt(id);
-                if (currentManagementFilter === '供应商管理') {
-                    // 供应商管理相关的法规ID
-                    const supplierIds = [10001, 10002, 10003, 10007, 10008, 10020, 10021, 10022];
-                    managementMatch = supplierIds.includes(idNum);
-                } else if (currentManagementFilter === '物料管理') {
-                    // 物料管理相关的法规ID（除了供应商管理专用的）
-                    const materialIds = [10004, 10005, 10006, 10009, 10011, 10012, 10013, 10016, 10017, 10018, 10023, 10024];
-                    managementMatch = materialIds.includes(idNum);
-                }
-            } else {
-                managementMatch = false;
-            }
-        }
-        
+                
         // 综合判断
-        const show = searchMatch && materialMatch && managementMatch;
+        const show = searchMatch && materialMatch;
         row.classList.toggle('hidden', !show);
         
         if (show) visibleCount++;
